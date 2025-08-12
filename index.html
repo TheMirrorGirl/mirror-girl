@@ -58,6 +58,7 @@
       margin: 0 1.2rem;
       padding: 0.2rem 0.25rem;
       transition: background-color 0.3s ease;
+      cursor: pointer;
     }
 
     nav a:hover,
@@ -161,5 +162,12 @@
   <footer role="contentinfo">
     &copy; 2017 The Lantern – Ohio State University Student News. This article is part of campus folklore and has not been verified by official sources.
   </footer>
+
+  <script>
+    // Safety: prevent any anchors with href="#" from doing anything (just in case)
+    document.querySelectorAll('a[href="#"]').forEach(anchor => {
+      anchor.addEventListener('click', e => e.preventDefault());
+    });
+  </script>
 </body>
 </html>
