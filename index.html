@@ -13,17 +13,12 @@
       box-sizing: border-box;
     }
 
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
+    body {
       font-family: 'Georgia', serif;
       background-color: #fafafa;
+      margin: 0;
       color: #222;
       line-height: 1.6;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
     }
 
     header {
@@ -33,14 +28,11 @@
       display: flex;
       align-items: center;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      flex-shrink: 0;
     }
 
     header img {
       height: 50px;
       margin-right: 1rem;
-      flex-shrink: 0;
-      max-width: 100%;
     }
 
     header h1 {
@@ -48,22 +40,16 @@
       font-weight: 700;
       font-size: 2.25rem;
       letter-spacing: 1px;
-      flex-shrink: 1;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
 
     nav {
       background-color: #333;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
-      padding: 0.75rem 1rem;
+      padding: 0.75rem 0;
       font-weight: 600;
       font-size: 1rem;
       user-select: none;
-      flex-shrink: 0;
     }
 
     nav a {
@@ -73,7 +59,6 @@
       padding: 0.2rem 0.25rem;
       transition: background-color 0.3s ease;
       cursor: pointer;
-      white-space: nowrap;
     }
 
     nav a:hover,
@@ -84,15 +69,12 @@
     }
 
     main {
+      max-width: 800px;
       background: white;
       margin: 2rem auto 4rem auto;
       padding: 2rem 2.5rem;
       border-radius: 6px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-      width: 90%;
-      max-width: 800px;
-      flex-grow: 1;
-      word-break: break-word;
     }
 
     main h2 {
@@ -115,7 +97,6 @@
       font-size: 1.1rem;
       margin-bottom: 1.5rem;
       letter-spacing: 0.02em;
-      word-break: break-word;
     }
 
     strong {
@@ -130,7 +111,6 @@
       padding: 1rem;
       border-top: 1px solid #ddd;
       user-select: none;
-      flex-shrink: 0;
     }
 
     @media (max-width: 600px) {
@@ -139,21 +119,18 @@
         padding: 1.5rem 1.5rem;
       }
       nav {
+        flex-wrap: wrap;
         font-size: 0.9rem;
       }
       nav a {
         margin: 0.3rem 0.8rem;
-      }
-      header h1 {
-        font-size: 1.5rem;
-        white-space: normal;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://brand.osu.edu/sites/brand.osu.edu/files/OSU_Seal_Logo_0.png" alt="Ohio State University Logo" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/1200px-Ohio_State_Buckeyes_logo.svg.png" alt="Ohio State Buckeyes Logo" />
     <h1>The Lantern – Ohio State University</h1>
   </header>
 
